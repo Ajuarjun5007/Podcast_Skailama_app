@@ -1,0 +1,108 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    background-color: white; /* Set background color to white */
+    overflow: hidden; /* Disable scrolling */
+  }
+  
+  /* Page Container */
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Push content down slightly */
+    height: 100vh; /* Take full viewport height */
+    width: 100vw; /* Take full viewport width */
+    background-color: white; /* Ensure the container is white */
+    text-align: center;
+    position: relative; /* To position the icons */
+  }
+  
+  /* Header Section */
+  .header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Push logo to the left, icons to the right */
+    align-items: center;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Push logo to the left, icons to the right */
+    align-items: center;
+    padding: 10px 20px;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .header img {
+    max-width: 150px; /* Adjust logo size */
+    height: auto;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+  }
+  
+  .header-icons .icon {
+    font-size: 30px;
+    color: #4B4B4B; /* Adjusted color for matching exact shade */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  /* Content Section */
+  .content {
+    max-width: 600px;
+    margin-top: 60px; /* Push content below the header */
+  }
+  
+  .title {
+    font-size: 32px;
+    color: #7E22CE; /* Purple color */
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    margin: 20px 0;
+  }
+  
+  .illustration {
+    max-width: 100%;
+    height: 30vh;
+    border-radius: 10px; /* Optional: Add rounded corners */
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin: 20px 0;
+  }
+  
+  /* Button */
+  .create-button {
+    background-color: #311b92; /* Dark Purple */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Space above button */
+  }
+  
+  .create-button:hover {
+    background-color: #512da8; /* Slightly lighter purple */
+  }
+  
