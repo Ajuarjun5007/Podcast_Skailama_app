@@ -1,0 +1,224 @@
+/* General Styles */
+.add-podcast-page {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Sidebar Styles */
+.add-podcast-sidebar {
+  width: 290px;
+  /* background-color: #7b49d3; */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.add-podcast-sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.add-podcast-sidebar-item {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  color: #646464;
+  transition: background-color 0.3s ease;
+}
+.add-podcast-sidebar-item-img-container{
+  margin-top: 30px;
+height: 35px;
+display: flex;
+justify-content: flex-start;
+}
+.add-podcast-sidebar-item-img{
+  height:100%;
+}
+.add-podcast-sidebar-item:hover,
+.add-podcast-sidebar-item.active {
+  background-color: #F3E8FF88;
+    COLOR: #7E22CE
+}
+
+.add-podcast-sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.add-podcast-user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.add-podcast-user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Main Content */
+.add-podcast-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 0;
+}
+
+/* Header Styles */
+.add-podcast-header {
+  margin-top: 30px;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #fff; */
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.add-podcast-header-title {
+  color: #7b49d3;
+  font-weight: bold;
+}
+
+.add-podcast-header-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.add-podcast-icon-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Breadcrumb Styles */
+.add-podcast-breadcrumb {
+  padding: 10px 20px;
+  font-size: 14px;
+  /* background-color: #f3f3f3; */
+  color: #666;
+}
+
+.add-podcast-breadcrumb-active {
+  color: #1D1929;
+}
+
+/* Content Styles */
+.add-podcast-content {
+  /* padding: 20px; */
+  padding: 0px 80px;
+}
+.add-podcast-title-container{
+ display: flex;
+  justify-content: flex-start;
+    margin-top: 10px;
+}
+.add-podcast-title {
+  font-size: 24px;
+  margin: 0!important;
+  /* margin-bottom: 20px; */
+  color: #333;
+}
+.add-podcast-card-container{
+  display: flex;
+  gap: 37px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.add-podcast-cards {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.add-podcast-card {
+  display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+  border-radius: 10px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+}
+
+.add-podcast-card h3 {
+  margin: 0;
+  font-size: 25px;
+  /* color: #666; */
+}
+.add-podcast-card p {
+  margin: 0;
+  color: #666;
+}
+
+.add-podcast-card:nth-child(1) h3 {
+  color: black;
+}
+
+.add-podcast-card:nth-child(2) h3 {
+  color: #ff0000;
+}
+
+.add-podcast-card:nth-child(3) h3 {
+  color: #7b49d3;
+}
+
+/* Upload Section */
+.add-podcast-upload {
+  background-color: #fff;
+  text-align: center;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-podcast-upload-icon {
+  font-size: 50px;
+  color: #7b49d3;
+  margin-bottom: 20px;
+}
+
+.add-podcast-upload-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.add-podcast-upload-text small {
+  color: #aaa;
+}
+
+.add-podcast-upload-button {
+  background-color: #7b49d3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.add-podcast-icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 8px;
+  border-radius: 15px;
+  border:1px solid #ddd;
+}

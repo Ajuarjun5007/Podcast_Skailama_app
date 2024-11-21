@@ -59,6 +59,16 @@ body, html {
     cursor: pointer;
     transition: color 0.3s ease;
   }
+  .plus-icon{
+    font-size: 22px;
+    color: #F8F8F8; /* Adjusted color for matching exact shade */
+    cursor: pointer;
+    transition: color 0.3s ease;
+    position: absolute;
+    left: 204px;
+    top: 29px;
+    background-color:#311b92;
+  }
   
   /* Content Section */
   .content {
@@ -94,6 +104,7 @@ body, html {
     background-color: #311b92; /* Dark Purple */
     color: white;
     border: none;
+    width: 40%;
     padding: 12px 24px;
     font-size: 16px;
     border-radius: 4px;
@@ -102,7 +113,11 @@ body, html {
     margin-top: 20px; /* Space above button */
   }
   
-  .create-button:hover {
-    background-color: #512da8; /* Slightly lighter purple */
+  .create-button-container{
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
   }
   

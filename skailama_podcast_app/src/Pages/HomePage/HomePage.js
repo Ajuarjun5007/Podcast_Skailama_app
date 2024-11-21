@@ -1,20 +1,37 @@
-import React from "react";
-import "./HomePage.css"; // CSS file for styles
+import React, { useState } from "react";
+import "../../Styles/HomePage.css"; 
 import logo from "../../Assets/QuesLogo 1.png";
 import podcast_img from "../../Assets/podcast_img.jpg";
-import { FaBell } from "react-icons/fa"; // Import Bell Icon
-
-import { IoSettingsOutline } from "react-icons/io5";
+import { FaBell } from "react-icons/fa"; 
 import { MdSettings } from "react-icons/md";
+import { FiPlusCircle } from "react-icons/fi";
+import ProjectModal from "../../Components/ProjectModal"; 
+
 const HomePage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false); 
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true); 
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false); 
+  };
+
+  const handleCreateProject = () => {
+    
+    console.log("Project Created!");
+    setIsModalOpen(false); 
+  };
+
   return (
     <div className="page-container">
       <div className="header-container">
         <header className="header" style={{ width: "90%" }}>
           <img src={logo} alt="Logo" />
           <div className="header-icons">
-            <MdSettings className="icon" /> {/* Settings Icon */}
-            <FaBell className="icon" /> {/* Bell Icon */}
+            <MdSettings className="icon" /> 
+            <FaBell className="icon" /> 
           </div>
         </header>
       </div>
@@ -34,8 +51,22 @@ const HomePage = () => {
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in.
         </p>
-        <button className="create-button">+ Create New Project</button>
+        <div className="create-button-container">
+        <FiPlusCircle className="plus-icon" /> 
+        <button className="create-button" onClick={handleOpenModal}>
+          Create New Project
+        </button>
+        </div >
       </main>
+
+      {/* Include the ProjectModal component */}
+      <ProjectModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        onSubmit={handleCreateProject}
+        title="Create Project"
+        placeholder="Enter Project Name"
+      />
     </div>
   );
 };
